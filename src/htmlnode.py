@@ -1,4 +1,4 @@
-class HtmlNode:
+class HTMLNode:
     def __init__(self, tag=None, value=None, children=None, props=None):
         self.tag = tag
         self.value = value
@@ -17,4 +17,4 @@ class HtmlNode:
         return props_html
         
     def __repr__(self):
-        return f"HtmlNode({self.tag}, {self.value}, {self.children}, {self.props})"
+        return f"HTMLNode({self.tag}, {self.value}, {self.children}, {self.props})"

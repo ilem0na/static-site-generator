@@ -1,5 +1,5 @@
 import unittest
-from htmlnode import HtmlNode
+from htmlnode import HTMLNode
 
 
 class TestHTMLNode(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestHTMLNode(unittest.TestCase):
         )
         self.assertEqual(
             node.__repr__(),
-            "HTMLNode(p, What a strange world, children: None, {'class': 'primary'})",
+            "HTMLNode(p, What a strange world, None, {'class': 'primary'})",
         )
 
 
