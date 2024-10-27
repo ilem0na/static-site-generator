@@ -43,4 +43,6 @@ class ParentNode(HTMLNode):
             raise ValueError("You need tags because you have leaf nodes")
         if self.children is None:
             raise ValueError("Must have kids!")
+        for child in self.children:
+            child.to_html()
         
